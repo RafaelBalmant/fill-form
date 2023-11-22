@@ -7,6 +7,13 @@ export default {
         roboto: ["Roboto", "sans-serif"],
         robotoBold: ["Roboto", "sans-serif"],
       },
+      colors: {
+        "bluish-purple": "#763DF2",
+        "lavender-indigo": "#8C5CF2",
+        "dull-lavender": "#B599F2",
+        "connecticut-lilac": "#C8C2F2",
+        "snorlax": "#222673",
+      },
     },
   },
   plugins: [],

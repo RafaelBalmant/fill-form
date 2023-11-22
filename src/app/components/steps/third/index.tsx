@@ -24,7 +24,7 @@ const ThirdStep = () => {
         ref={measuredRef}
         penColor="green"
         backgroundColor="gray"
-        canvasProps={{ width: 500, height: 200, className: "sigCanvas" }}
+        canvasProps={{ width: 300, height: 200, className: "sigCanvas" }}
       />
       <button
         type="submit"

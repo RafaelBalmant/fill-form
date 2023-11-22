@@ -22,6 +22,7 @@ const stepsList = [
 ];
 
 export const Steps = () => {
-  const step = useStore((state: any) => state.step);
-  return <div className="m-10">{stepsList[step].component()}</div>;
+  return (
+    <div className="m-10">{stepsList.map(({ component }) => component())}</div>
+  );
 };
