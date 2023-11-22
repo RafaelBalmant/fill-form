@@ -8,7 +8,7 @@ import Button from "../../button";
 const ThirdStep = () => {
   const setData = useStore((state: any) => state.setData);
   const step = useStore((state: any) => state.step);
-  const sigCanvas = useRef({});
+  const sigCanvas: any = useRef({});
   const sigPad = useRef({});
   const measuredRef = useCallback((node) => {
     if (node !== null) {

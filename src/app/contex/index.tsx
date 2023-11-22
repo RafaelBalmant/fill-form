@@ -20,7 +20,7 @@ const useStore = create((set) => ({
         [state.step]: type === "text" ? state.valueStep : data,
       },
     })),
-  cleanValueStep: () => set((state: any) => ({ valueStep: "" })),
+  cleanValueStep: () => set(() => ({ valueStep: "" })),
 }));
 
 export default useStore;

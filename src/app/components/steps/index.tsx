@@ -1,4 +1,3 @@
-import useStore from "../../contex";
 import FirstStep from "./first";
 import SecondStep from "./second";
 import ThirdStep from "./third";
