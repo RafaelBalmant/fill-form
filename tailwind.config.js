@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
-        robotoBold: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         "bluish-purple": "#763DF2",

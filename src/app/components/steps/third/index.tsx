@@ -1,9 +1,13 @@
 import { useCallback, useRef } from "react";
 import ReactSignatureCanvas from "react-signature-canvas";
 import useStore from "../../../contex";
+import { Container } from "../styles";
+import Question from "../../question";
+import Button from "../../button";
 
 const ThirdStep = () => {
   const setData = useStore((state: any) => state.setData);
+  const step = useStore((state: any) => state.step);
   const sigCanvas = useRef({});
   const sigPad = useRef({});
   const measuredRef = useCallback((node) => {
@@ -18,22 +22,20 @@ const ThirdStep = () => {
     setData(dataURL);
   };
   return (
-    <div>
-      <h1>Third Step</h1>
+    <Container visible={step === 2 || false}>
+      <Question question="Voce concorda com todos os termos de uso" />
       <ReactSignatureCanvas
         ref={measuredRef}
-        penColor="green"
-        backgroundColor="gray"
+        penColor="black"
+        backgroundColor="white"
         canvasProps={{ width: 300, height: 200, className: "sigCanvas" }}
       />
-      <button
-        type="submit"
-        className="rounded-md bg-blue-500 text-white px-4 py-2 m-109"
-        onClick={setSignatureOnChange}
-      >
-        Confirmar
-      </button>
-    </div>
+      <div className="w-full flex justify-end">
+        <Button callback={setSignatureOnChange} width="w-max">
+          Confirmar
+        </Button>
+      </div>
+    </Container>
   );
 };
 

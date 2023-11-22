@@ -1,7 +1,7 @@
-const TextArea = (props) => {
+const Input = (props) => {
   return (
     <div>
-      <textarea
+      <input
         {...props}
         placeholder="Digite sua resposta"
         className="w-full h-full rounded-md p-2
@@ -12,4 +12,4 @@ const TextArea = (props) => {
   );
 };
 
-export default TextArea;
+export default Input;

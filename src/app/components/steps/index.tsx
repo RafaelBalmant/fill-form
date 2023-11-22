@@ -22,7 +22,5 @@ const stepsList = [
 ];
 
 export const Steps = () => {
-  return (
-    <div className="m-10">{stepsList.map(({ component }) => component())}</div>
-  );
+  return <>{stepsList.map(({ component }) => component())}</>;
 };

@@ -30,7 +30,10 @@ function App() {
 
   return (
     <div className="bg-lavender-indigo body-font font-roboto h-screen w-screen inline-block">
-      <div className="flex items-center justify-end flex-col bg-slate-200 w-min h-min rounded-md mx-auto mt-10 drop-shadow-lg p-2">
+      <div className="flex items-center justify-end flex-col bg-slate-200 w-10/12 h-min rounded-md mx-auto mt-10 drop-shadow-lg p-2 ">
+        <div className="text-left w-full text-lavender-indigo">
+          <p className="text-2xl font-extrabold">{step + 1} - Questao</p>
+        </div>
         <Steps />
         {!finalStep && (
           <div className="w-full flex justify-end">

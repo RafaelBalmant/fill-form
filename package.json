@@ -10,11 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^3.1.14",
+    "@types/styled-components": "^5.1.32",
     "react": "^18.2.0",
-    "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",
     "react-signature-canvas": "^1.0.6",
+    "styled-components": "^6.1.1",
     "zustand": "^4.4.6"
   },
   "devDependencies": {
