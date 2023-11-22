@@ -2,8 +2,6 @@ import { useCallback, useEffect } from "react";
 import useStore from "./contex";
 import { Steps } from "./components/steps";
 import Button from "./components/button";
-import Input from "./components/textArea";
-import TextArea from "./components/textArea";
 
 function App() {
   const {
